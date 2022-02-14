@@ -23,67 +23,62 @@
 			<span class="comments">##</span><br/>
 			<span class="comments"># I am a programmer,</span><br/>
 			<span class="comments"># so I write code to celebrate Valentine's Day in coder's way.</span><br/>
+			<span class="comments"># ...Ладно, знаю, дальше английский будет только в коде)</span><br/>
 			<span class="comments">##</span><br/>
-			i = Boy(<span class="string">"Qingcai Cui"</span>);<br/>
-			u = Girl(<span class="string">"Qian Ma"</span>);<br/>
-			<span class="comments"># Oct 14, 2018, I meet you because of PyCon 2018. </span><br/>
-			i.meet(u)<br/>
-			<span class="comments"># Afterwards, I confessed to you. </span><br/>
-			i.confess(u)<br/>
-			<span class="comments"># Nov 5, 2018, You became my girlfriend.</span><br/>
-			u.accepted(i)<br/>
-			<span class="comments"># Since then, we spent harmony happiness life every day.</span><br/>
-			happy(u, i)<br/>
-			<span class="comments"># We enjoy studying together.</span><br/>
-			study(u, i)<br/>
-			<span class="comments"># We enjoy cuisine together.</span><br/>
-			dine(u, i)<br/>
-			<span class="comments"># We enjoy appointment together.</span><br/>
-			appoint(u, i)<br/>
-			<span class="comments"># We enjoy vacation together.</span><br/>
-			vacation(u, i)<br/>
-			<span class="comments"># Sometimes there are a few conflicts between us.</span><br/>
-			conflict(u, i, sometimes=<span class="keyword">True</span>)<br/>
-			<span class="comments"># But we are getting more and more in harmony together.</span><br/>
+			i = Boy(<span class="string">"Тёма"</span>);<br/>
+			u = Girl(<span class="string">"Катя"</span>);<br/>
+			<span class="comments"># Мы знакомы с тобой уже семь лет. </span><br/>
+			i.meet(u, years_ago = 7)<br/>
+			<span class="comments"># Почти сразу мы с тобой поладили. </span><br/>
+			we = compose(i, u);<br/>
+			<span class="comments"># ...и подружились) </span><br/>
+			we.startFriendship()<br/>
+			<span class="comments"># Нам нравится разговаривать друг с другом. </span><br/>
+			we.enjoy(talkTogether)<br/>
+			<span class="comments"># Нам нравится молчать вместе. </span><br/>
+			we.enjoy(keepSilentTogether)<br/>
+			<span class="comments"># Иногда мы ссоримся... </span><br/>
+			we.conflict(sometimes=<span class="keyword">True</span>)<br/>
+			<span class="comments"># Но невзирая ни на что мы живем душа в душу. </span><br/>
 			u.in_harmony_with(i) <br/>
 			i.in_harmony_with(u) <br/>
-			<span class="comments"># You are the greatest love of my life.</span><br/>
+			<span class="comments"># С каждым годом ты становишься мне всё дороже. </span><br/>
 			while <span class="keyword">True</span>:<br/>
+			<span class="placeholder"></span>love++<br/>
 			<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br/>
 			<span class="placeholder"></span><span class="placeholder"></span>u = everything<br/>
 			<span class="placeholder"></span><span class="keyword">else</span>:<br/>
 			<span class="placeholder"></span><span class="placeholder"></span>everything = u<br/>
-			<span class="comments"># Waiting me marries you, we will be the happiest couple in the world.</span><br/>
-			i.marry(u, in_the_future=<span class="keyword">True</span>)<br/>
-			i.live_happily_forever_with(u)<br/>
-			<span class="comments"># I love you forever.</span><br/>
+			<span class="comments"># Не угрожаю, но я с тобой навсегда) </span><br/>
+			<span class="comments"># Наша история только начинается... </span><br/>
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					Qian, I have fallen in love with you for
+					Наш фильм идет уже
 					<div id="elapseClock"></div>
+
 				</div>
 				<div id="loveu">
-					Love u forever and ever.<br/>
-					<div class="signature">- Qingcai Cui | Germey</div>
+					Люблю тебя сильнее всех.<br/>
+					<div class="signature">- Катя | Тёма </div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="copyright">
-		Copyright © 2020 <a href='http://cuiqingcai.com'>cuiqingcai.com</a> 2014-2020
+		2022 <a href='http://cuiqingcai.com'>smoke52ru.github.io</a>
 	</div>
 </div>
 <script type="text/javascript">
 	var offsetX = $("#loveHeart").width() / 2;
 	var offsetY = $("#loveHeart").height() / 2 - 55;
 	var together = new Date();
-	// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
-	together.setFullYear(2018, 10, 5);
-	together.setHours(15);
-	together.setMinutes(0);
+
+	together.setFullYear(2015, 4, 3);
+	together.setHours(14);
+	together.setMinutes(23);
 	together.setSeconds(0);
 	together.setMilliseconds(0);
 
